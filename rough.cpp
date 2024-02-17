@@ -2,11 +2,11 @@
 using namespace std;
 int main()
 {
-    int b,h;
-    float area;
-    cout<<"Enter base and height: ";
-    cin>>b>>h;
-    area=(float)(b*h)/2;
-    cout<<area;
+    int n;
+    int sum;
+    cout<<"Enter n: ";
+    cin>>n;
+    sum=(n*(n+1))/2;
+    cout<<"Sum is "<<sum;
     return 0;
 }

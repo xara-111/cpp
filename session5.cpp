@@ -101,3 +101,21 @@ int main()
     return 0;
 }
 */
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int sum=0;
+    int count=0;
+    int n;
+    cout<<"Enter n: ";
+    cin>>n;
+    while(count<=n)
+    {
+        sum=sum+count;
+        count++;
+    }
+    cout<<"sum is "<<sum;
+    return 0;
+}
