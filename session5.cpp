@@ -102,6 +102,9 @@ int main()
 }
 */
 
+/*
+//SUM OF N NATURAL NO.S (USING LOOP)
+
 #include<iostream>
 using namespace std;
 int main()
@@ -119,3 +122,21 @@ int main()
     cout<<"sum is "<<sum;
     return 0;
 }
+*/
+
+/*
+//SUM OF N NATURAL NO.S (FORMULA)
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n;
+    int sum;
+    cout<<"Enter n: ";
+    cin>>n;
+    sum=(n*(n+1))/2;
+    cout<<"Sum is "<<sum;
+    return 0;
+}
+*/
+
