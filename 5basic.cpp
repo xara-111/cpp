@@ -178,18 +178,18 @@ int main()
     {
         r1=(-b+(sqrt(d)))/(2*a);
         r2=(-b-(sqrt(d)))/(2*a);
-        cout<<"Roots are "<<r1<<" "<<r2;
+        cout<<"Real and distinct roots are "<<r1<<" "<<r2;
     }
     else if(d==0.0)
     {
         r1=(-b)/(2*a);
-        cout<<"Root is "<<r1;
+        cout<<"Roots are equal "<<r1;
     }
-    else if(d<0)
+    else
     {
         r1=(-b)/(2*a);
         r2=(sqrt(d))/(2*a);       //giving NaN (problem)
-        cout<<"Roots are "<<r1<<" "<<r2;
+        cout<<"Roots are imaginary "<<r1<<" "<<r2;
     }
     return 0;
 }
@@ -300,6 +300,65 @@ int main()
     int x=5,y;
     y=~x;
     cout<<(int)y<<endl;
+    return 0;
+}
+*/
+
+/*
+//ENUM DATATYPE
+
+#include<iostream>
+using namespace std;
+enum day{mon,tue,wed=6,thurs,fri,sat=10,sun};
+
+int main()
+{
+    day d;
+    d=tue;
+    cout<<mon<<endl;
+    cout<<wed<<endl;
+    cout<<thurs<<endl;
+    cout<<fri<<endl;
+    cout<<sun<<endl;
+    return 0;
+}
+*/
+
+
+/*
+//TYPEDEF 
+
+#include<iostream>
+using namespace std;
+
+typedef int marks;
+
+int main()
+{
+    marks m1,m2;  //now we can easily figure out m1,m2 are marks
+
+    m1=34;
+    m2=67;   
+}
+*/
+
+/*
+//NET SALARY
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    float basicsalary, percentallow, percentdeduct, netsalary;
+    cout<<"Enter basic salary: ";
+    cin>>basicsalary;
+    cout<<"Enter percentage of allowance: ";
+    cin>>percentallow;
+    cout<<"Enter percentage of deduction: ";
+    cin>>percentdeduct;
+
+    netsalary=basicsalary+(basicsalary*percentallow)-(basicsalary*percentdeduct);
+    cout<<"Salary: "<<netsalary;
     return 0;
 }
 */
