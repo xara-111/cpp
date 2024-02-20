@@ -112,7 +112,7 @@ int main()
 }
 */
 
-
+/*
 // CALCULATING THE DISCOUNT AMOUNT OF TOTAL
 
 #include<iostream>
@@ -139,7 +139,7 @@ int main()
     }
     
 }
-
+*/
 
 
 // ELSE-IF LADDER
@@ -273,6 +273,8 @@ int main()
 
 
 /*
+//CALCULATING THE DISCOUNT 2
+
 #include<iostream>
 using namespace std;
 int main()
@@ -299,6 +301,71 @@ int main()
 
     cout<<"The discount is "<<discount<<endl;
     cout<<"Total amount is "<<(billAmount-discount)<<endl;
+    return 0;
+}
+*/
+
+/*
+//leap year
+#include<iostream>
+using namespace std;
+int main()
+{
+    int year;
+    cout<<"Enter year: ";
+    cin>>year;
+
+    if(year%4==0)
+    {
+        cout<<"leap";
+    }
+    else if(year%100==0)
+    {
+        cout<<"Not leap";
+    }
+    else if(year%400==0)
+    {
+        cout<<"leap";
+    }
+    
+}
+*/
+
+
+
+/*
+//LEAP YEAR (BETTER)
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int year;
+    cout<<"Enter year: ";
+    cin>>year;
+
+    if(year%4==0)
+    {
+        if(year%100==0)
+        {
+            if(year%400==0)        
+            {
+                cout<<year<<" is a leap year\n";
+            }
+            else
+            {
+                cout<<year<<" is not a leap year\n";
+            }
+        }
+        else
+        {
+            cout<<year<<" is a leap year\n";
+        }
+    }
+    else
+    {
+        cout<<year<<" is not a leap year\n";
+    }
     return 0;
 }
 */
