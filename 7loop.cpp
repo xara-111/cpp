@@ -250,3 +250,209 @@ int main()
     cout<<endl;
 }
 */
+
+/*
+//DISPLAY DIGITS OF A NUMBER IN REVERSE
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cout<<"Enter number: ";
+    cin>>n;
+    int first_digit;
+    while(n!=0)
+    {
+        first_digit=n%10;
+        cout<<first_digit;
+        n/=10;
+    }
+    if(first_digit==n)
+    {
+        cout<<"Palindrome";
+    }else{
+        cout<<"Not";
+    }
+}
+*/
+
+/*
+//REVERSE A NUMBER
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cout<<"Enter the number: ";
+    cin>>n;
+
+    int rev=0;
+    int r;
+
+    while(n!=0)
+    {
+        r=n%10;
+        n/=10;
+        rev=rev*10+r;
+    }
+    cout<<"Reverse is "<<rev;
+}
+*/
+
+
+/*
+//PALINDROME NUMBER
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cout<<"Enter number: ";
+    cin>>n;
+    int rev=0;
+    int r;
+    int temp=n;   //TAKING A TEMP VARIABLE BECAUSE DURING LOOP N IS DIVIDED REPEATEDLY AND BECOMES 0.
+    while(n!=0)
+    {
+        r=n%10;
+        n/=10;
+        rev=rev*10+r;
+    }
+    cout<<rev<<endl;
+    if(rev==temp)
+    {
+        cout<<"palindrome";
+    }else{
+        cout<<"Not palindrome";
+    }
+}
+*/
+
+/*
+//ARMSTRONG NUMBER
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cout<<"Enter number: ";
+    cin>>n;
+    int temp=n;
+    int r;
+    int sum=0;
+    while(n!=0)
+    {
+        r=n%10;
+        n/=10;
+        sum=sum+(r*r*r);
+    }
+    if(sum==temp)
+    {
+        cout<<"Armstrong";
+    }else{
+        cout<<"Not armstrong";
+    }
+
+}
+*/
+
+/*
+// GCD OF TWO NUMBERS
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,m;
+    cout<<"Enter two numbers: ";
+    cin>>n>>m;
+
+    while(m!=n)
+    {
+        if(m>n)
+        {
+            m=m-n;
+        }else if(n>m)
+        {
+            n=n-m;
+        }
+    }
+    cout<<"GCD= "<<m;
+
+}
+*/
+
+
+
+
+//PROBLEM QUESTIONS
+
+/*
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cout<<"Enter number: ";
+    cin>>n;
+    int temp=n;
+    int r;
+    int rev=0;
+
+    while(n!=0)
+    {
+        r=n%10;
+        n/=10;
+        rev=rev*10+r;
+    }
+    switch(rev)
+    {
+        case 0:cout<<"zero";
+        break;
+        case 1:cout<<"one";
+        break;
+        case 2:cout<<"two";
+        break;
+        case 3:cout<<"three";
+        break;
+        case 4:cout<<"four";
+        break;
+        case 5:cout<<"five";
+        break;
+        case 6:cout<<"six";
+        break;
+        case 7:cout<<"seven";
+        break;
+        case 8:cout<<"eight";
+        break;
+        case 9:cout<<"nine";
+        break;
+    }
+}
+*/
+
+/*
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cout<<"Enter number: ";
+    cin>>n;
+
+    char reverse[10];
+    int r;
+    int i=0;
+    while(n>0)
+    {
+        r=n%10;
+        reverse[i]=r+'0';
+        n/=10;
+    }
+    reverse[i]='\0';
+    cout<<"Reverse: "<<reverse;
+}
+*/
