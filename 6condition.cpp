@@ -24,6 +24,10 @@ int main()
 //CHECK IF EVEN OR ODD
 
 
+
+
+
+
 /*
 // CONDITIONALS
 
