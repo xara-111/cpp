@@ -18,6 +18,11 @@ int main()
 }
 */
 
+
+
+
+
+
 /*
 // PRINT N NUMBERS (DO-WHILE LOOP)
 
@@ -37,6 +42,12 @@ int main()
 }
 */
 
+
+
+
+
+
+
 /*
 // PRINT N NUMBERS (WHILE LOOP)
 
@@ -55,6 +66,11 @@ int main()
 */
 
 
+
+
+
+
+
 /*
 // INFINITE LOOP
 
@@ -69,6 +85,12 @@ for(;;)
  }
 }
 */
+
+
+
+
+
+
 
 /*
 // BREAK INFINITE LOOP
@@ -89,6 +111,12 @@ int main()
 }
 */
 
+
+
+
+
+
+
 /*
 // MULTIPLICATION TABLE
 
@@ -107,6 +135,13 @@ int main()
     }
 }
 */
+
+
+
+
+
+
+
 
 /*
 //SUM OF N NUMBERS
@@ -128,6 +163,11 @@ int main()
 }
 */
 
+
+
+
+
+
 /*
 //FACTORIAL
 
@@ -146,6 +186,11 @@ int main()
     cout<<"Factorial is "<<fact<<endl;
 }
 */
+
+
+
+
+
 
 /*
 // FACTORS OF A NUMBER
@@ -170,6 +215,12 @@ int main()
     return 0;
 }
 */
+
+
+
+
+
+
 
 /*
 // PERFECT NUMBER
@@ -198,6 +249,13 @@ int main()
     }
 }
 */
+
+
+
+
+
+
+
 
 /*
 //PRIME NUMBER
@@ -228,6 +286,13 @@ int main()
 */
 
 
+
+
+
+
+
+
+
 /*
 //DISPLAY DIGITS OF A NUMBER IN REVERSE
 
@@ -250,6 +315,15 @@ int main()
     cout<<endl;
 }
 */
+
+
+
+
+
+
+
+
+
 
 /*
 //DISPLAY DIGITS OF A NUMBER IN REVERSE
@@ -277,6 +351,12 @@ int main()
 }
 */
 
+
+
+
+
+
+
 /*
 //REVERSE A NUMBER
 
@@ -300,6 +380,12 @@ int main()
     cout<<"Reverse is "<<rev;
 }
 */
+
+
+
+
+
+
 
 
 /*
@@ -331,6 +417,13 @@ int main()
 }
 */
 
+
+
+
+
+
+
+
 /*
 //ARMSTRONG NUMBER
 
@@ -360,6 +453,13 @@ int main()
 }
 */
 
+
+
+
+
+
+
+
 /*
 // GCD OF TWO NUMBERS
 #include<iostream>
@@ -384,6 +484,9 @@ int main()
 
 }
 */
+
+
+
 
 
 
@@ -433,6 +536,15 @@ int main()
     }
 }
 */
+
+
+
+
+
+
+
+
+
 
 /*
 #include<iostream>

@@ -14,6 +14,11 @@ int main()
 }
 */
 
+
+
+
+
+
 /*
 //TAKING STRING USER INPUT
 
@@ -30,6 +35,11 @@ int main()
     return 0;
  }
  */
+
+
+
+
+
 
 /*
 //AREA OF TRIANGLE
@@ -53,6 +63,12 @@ int main()
 }
 */
 
+
+
+
+
+
+
 /*
 //AREA OF TRIANGLE (BETTER)
 
@@ -68,6 +84,13 @@ int main()
     return 0;
 }
 */
+
+
+
+
+
+
+
 
 /*
 //AREA OF TRIANLE (TYPE CASTING)
@@ -85,6 +108,13 @@ int main()
 }
 */
 
+
+
+
+
+
+
+
 /*
 //AREA OF TRIANGLE (TYPE CASTING, USER INPUT)
 
@@ -101,6 +131,14 @@ int main()
     return 0;
 }
 */
+
+
+
+
+
+
+
+
 
 /*
 //SUM OF N NATURAL NO.S (USING LOOP)
@@ -124,6 +162,13 @@ int main()
 }
 */
 
+
+
+
+
+
+
+
 /*
 //SUM OF N NATURAL NO.S (FORMULA)
 #include<iostream>
@@ -139,6 +184,13 @@ int main()
     return 0;
 }
 */
+
+
+
+
+
+
+
 
 /*
 //FINDING ROOTS OF A QUADRATIC EQUATION (ONLY REAL AND DISTINCT)
@@ -158,6 +210,14 @@ float root1,root2;
 return 0;
 }
 */
+
+
+
+
+
+
+
+
 
 /*
 //ROOTS OF QUADRATIC EQUATION
@@ -196,6 +256,14 @@ int main()
 */
 
 
+
+
+
+
+
+
+
+
 /*
 //AREA OF A CIRCLE
 
@@ -220,6 +288,15 @@ int main()
 
 //Distance between 2 points: sqrt(x2-x1)^2+(y2-y1)^2 
 
+
+
+
+
+
+
+
+
+
 /*
 //INCREEMENT AND DECREEMENT
 
@@ -242,6 +319,11 @@ int main()
 */
 
 
+
+
+
+
+
 /*
 //OVERFLOW
 
@@ -255,6 +337,15 @@ int main()
     cout<<(int)x;
 }
 */
+
+
+
+
+
+
+
+
+
 
 /*
 //BITWISE OPERATORS(AND, OR, XOR)
@@ -273,6 +364,15 @@ int main()
 }
 */
 
+
+
+
+
+
+
+
+
+
 /*
 //BITWISE (<< , >>)
 
@@ -290,6 +390,14 @@ int main()
 }
 */
 
+
+
+
+
+
+
+
+
 /*
 //BITWISE (NOT)
 
@@ -303,6 +411,16 @@ int main()
     return 0;
 }
 */
+
+
+
+
+
+
+
+
+
+
 
 /*
 //ENUM DATATYPE
@@ -325,6 +443,14 @@ int main()
 */
 
 
+
+
+
+
+
+
+
+
 /*
 //TYPEDEF 
 
@@ -341,6 +467,15 @@ int main()
     m2=67;   
 }
 */
+
+
+
+
+
+
+
+
+
 
 /*
 //NET SALARY

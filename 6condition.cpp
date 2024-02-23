@@ -43,6 +43,14 @@ int main()
 }
 */
 
+
+
+
+
+
+
+
+
 /*
 //LOGICAL OPERATORS AND COMPOUND CONDITIONAL STATEMENTS
 
@@ -66,6 +74,14 @@ int main()
 }
 */
 
+
+
+
+
+
+
+
+
 /*
 // COMPOUND CONDITIONAL STATEMENT
 
@@ -85,6 +101,14 @@ int main()
     }
 }
 */
+
+
+
+
+
+
+
+
 
 /*
 //NESTED CONDITIONAL STATEMENTS
@@ -111,6 +135,16 @@ int main()
     return 0;
 }
 */
+
+
+
+
+
+
+
+
+
+
 
 /*
 // CALCULATING THE DISCOUNT AMOUNT OF TOTAL
@@ -141,8 +175,15 @@ int main()
 }
 */
 
-
 // ELSE-IF LADDER
+
+
+
+
+
+
+
+
 
 /*
 //SHORT CIRCUIT
@@ -161,6 +202,15 @@ int main()
 }
 */
 
+
+
+
+
+
+
+
+
+
 /*
 //SHORT CIRCUIT 2
 
@@ -177,6 +227,16 @@ int main()
 }
 */
 
+
+
+
+
+
+
+
+
+
+
 /*
 //DYNAMIC DECLARATION 
 
@@ -192,6 +252,14 @@ int main()
     return 0;
 }
 */
+
+
+
+
+
+
+
+
 
 /*
 //SWITCH CASE
@@ -227,6 +295,13 @@ int main()
     return 0;
 }
 */
+
+
+
+
+
+
+
 
 
 /*
@@ -272,6 +347,14 @@ int main()
 */
 
 
+
+
+
+
+
+
+
+
 /*
 //CALCULATING THE DISCOUNT 2
 
@@ -305,6 +388,15 @@ int main()
 }
 */
 
+
+
+
+
+
+
+
+
+
 /*
 //leap year
 #include<iostream>
@@ -330,6 +422,14 @@ int main()
     
 }
 */
+
+
+
+
+
+
+
+
 
 
 
