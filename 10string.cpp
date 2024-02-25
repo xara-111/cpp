@@ -216,7 +216,7 @@ int main()
     char s2[10]="";
 
 
-//TWO WAYS TO DO IT.
+//2 ways to do it
 
     strcpy(s2,s1);
     strncpy(s2,s1,2);
@@ -224,3 +224,115 @@ int main()
     cout<<s2<<endl;
 }
 */
+
+
+/*
+//SUBSTRING FROM MAIN STRING
+
+#include<iostream>
+#include<cstring>
+using namespace std;
+int main()
+{
+    char s1[100];
+    cout<<"Enter string 1: ";
+    cin>>s1;
+
+    char s2[100];
+    cout<<"Enter search for: ";
+    cin>>s2;
+
+    if(strstr(s1,s2)!=0)
+    {
+    cout<<strstr(s1,s2)<<endl ;      
+    }
+    else{
+        cout<<"Not found"<<endl;
+    }
+    return 0;
+}
+*/
+
+
+/*
+//SUBSTRING OF CHARACHTER FROM A  STRING
+
+#include<iostream>
+#include<cstring>
+using namespace std;
+int main()
+{
+    char s1[100];
+    cout<<"Enter string 1: ";
+    cin>>s1;
+
+    char s2;                        //charachter
+    cout<<"Enter search for: ";
+    cin>>s2;
+
+    cout<<strchr(s1,s2)<<endl;        //Find the occurenece of character in the string
+    cout<<strrchr(s1,s2)<<endl;       //Find the occurenece of character in the string from RHS
+    cout<<strchr(s1,'g');             //Could also be done this way
+    return 0;
+}
+*/
+
+
+
+/*
+//COMPARING 2 STRINGS
+
+#include<iostream>
+#include<cstring>
+using namespace std;
+int main()
+{
+    char s1[100];
+    cout<<"Enter string 1: ";
+    cin>>s1;
+
+    char s2[100];
+    cout<<"Enter string 2: ";
+    cin>>s2;
+
+    cout<<strcmp(s1,s2)<<endl;
+
+
+
+// s1 > s2 = positive value
+// s2 > s1 = negative value
+// s1 = s2 = 0
+}
+*/
+
+
+/*
+//CONVERT STRINGS TO INTEGER
+#include<iostream>
+#include<cstring>
+using namespace std;
+int main()
+{
+    char s1[20]="234";
+    char s2[10]="54.78";
+
+    long int x=strtol(s1,NULL,10);  //Converts string to long integer
+    float y=strtof(s2, NULL);       //Converts string to float 
+
+    cout<<x<<endl;  //Displays the integer form of the number in string and arithmetic operations could be performed on it.
+    cout<<y<<endl;
+
+}
+*/
+
+
+
+
+#include<iostream>
+#include<cstring>
+using namespace std;
+int main()
+{
+
+}
+
