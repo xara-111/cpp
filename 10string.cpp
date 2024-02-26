@@ -61,8 +61,7 @@ int main()
 
 
 
-
-
+// INFORMATIONS AND NOTES
 /*
 cin.ignore()
 • When we enter any input from keyboard, it is transferred to an
@@ -75,6 +74,15 @@ input buffer.
 • Usually programs don’t read a string value because of enter key.
 • Use cin.ignore() before reading a string
 */
+
+
+
+
+
+
+
+
+
 
 /*
 //TAKING USER INPUT MULTIPLE TIMES(GET FUNCTION)
@@ -111,6 +119,13 @@ int main()
 
 
 
+
+
+
+
+
+
+
 /*
 //TAKING USER INPUT MULTIPLE TIMES(GETLINE FUNCTION)
 
@@ -133,6 +148,14 @@ int main()
     cout<<"Welcome "<<s2<<endl;
 }
 */
+
+
+
+
+
+
+
+
 
 
 
@@ -183,6 +206,7 @@ int main()
 
 
 
+
 /*
 //CONCATENATE STRING
 
@@ -205,6 +229,14 @@ int main()
 
 
 
+
+
+
+
+
+
+
+
 /*
 //COPYING STRING
 
@@ -224,6 +256,14 @@ int main()
     cout<<s2<<endl;
 }
 */
+
+
+
+
+
+
+
+
 
 
 /*
@@ -254,6 +294,16 @@ int main()
 */
 
 
+
+
+
+
+
+
+
+
+
+
 /*
 //SUBSTRING OF CHARACHTER FROM A  STRING
 
@@ -276,6 +326,14 @@ int main()
     return 0;
 }
 */
+
+
+
+
+
+
+
+
 
 
 
@@ -306,6 +364,16 @@ int main()
 */
 
 
+
+
+
+
+
+
+
+
+
+
 /*
 //CONVERT STRINGS TO INTEGER
 #include<iostream>
@@ -328,11 +396,330 @@ int main()
 
 
 
+
+
+
+
+
+
+/*
+//TOKENIZING A STRING
+
 #include<iostream>
 #include<cstring>
 using namespace std;
 int main()
 {
+    char s1[20]="x=10;y=20;z=35";
 
+    char *token=strtok(s1, "=;");
+
+    while(token!=NULL)
+    {
+        cout<<token<<endl;
+        token=strtok(NULL,"=;");
+    }
+    return 0;
 }
+*/
+
+
+
+
+
+
+
+
+
+
+/*
+// TOKENIZATION(CUSTOMIZED)
+
+#include<iostream>
+#include<cstring>
+using namespace std;
+int main()
+{
+    char s1[20]="x=10?y=20?z=35";     //Any symbol could be used
+
+    char *token=strtok(s1, "=?");     //Because ? used in string
+
+    while(token!=NULL)
+    {
+        cout<<token<<endl;
+        token=strtok(NULL,"=?");
+    }
+    return 0;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+/*
+//CLASS STRING
+
+#include<iostream>
+#include<string>         //The header file required.
+using namespace std;
+
+int main()
+{
+    string str;         //Declaring class string
+    cout<<"Enter a string: ";
+    getline(cin,str);
+    cout<<str<<endl;
+
+    getline(cin,str);    //This one would work as well
+    cout<<str<<endl;
+
+    cin>>str;
+    cout<<str<<endl;
+    return 0;
+
+    //It doesn't take /n as character for next string.
+}
+*/
+
+
+
+
+
+
+
+
+
+
+/*
+//MULTIPLE CLASS STRING
+
+#include<iostream>
+#include<string>
+using namespace std;
+
+int main()
+{
+    string str;
+    cout<<"Enter a string: ";
+    cin>>str;
+    cout<<str<<endl;
+
+    cin>>str;
+    cout<<str<<endl;
+    return 0;
+
+    //It doesn't allow multiple words so each str is taking each word.
+    //It doesn't take /n as character for next string.
+}
+*/
+
+
+
+
+
+
+
+
+/*
+//BASIC FUNCTIONS OF CLASS STRING
+
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+    string str="Hello";
+
+    //cout<<str.length()<<endl;   //To find length of string.
+
+//Doesn't print 0 for nullptr(null pointer). Doesn't work with it.
+
+
+
+    //cout<<str.size()<<endl;      //Same as length
+
+    //str.resize(30);    //It'll make the capacity is 30 or more than 30.
+
+    //cout<<str.capacity()<<endl;  //To find the capacity of the array.
+
+    //cout<<str.max_size()<<endl;  //Maximum size of array possible by compiler
+
+    //str.clear();                //Clear the contenets of the string
+
+    if(str.empty())               //Checks if empty
+    {
+        cout<<"String is empty"<<endl;
+    }
+    else{
+        cout<<"String is "<<str<<endl;
+    }
+
+    cout<<str<<endl;
+    return 0;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+/*
+// STRING (APPEND AND INSERT) FUNCTION
+
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+    string str1="Hello";
+    string str2="World";
+
+    // str.append(" World");     //To add a new content at the end of the string
+
+    // str.insert(3,"kk");       //To insert a something at the mentioned index   
+    // str.insert(3,"apple",2);  //Insert a few mentioned letters of the given string.
+
+    // str.replace(3,4,"aa");    //To replace few letters in a string/whole string
+
+    // str.erase();              //To erase a string
+
+    // str.push_back('z');       //Add a character to end of the string
+
+    // str.pop_back();           //Remove the last character of string, backspace
+
+    // str1.swap(str2);             //To swap 2 strings
+    // cout<<str1<<" "<<str2<<endl;
+}
+*/
+
+
+
+
+
+
+
+
+
+/*
+//STRING FUNCTIONS AND STRING OPERATORS
+
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+    string str="Welcome";
+    string str2=" Hello";
+
+    //char str[10];     //Making a character array to copy the string
+
+    //s.copy(str, s.length());    //To copy the string at s to array str
+
+    // s.copy(str,3);                //Mentioning no. of letters to be copied
+    // str[3]='\0';                  // To avoid printing garbage values after copying ends
+     
+    // cout<<str.find("co")<<endl;   //To find occurenece of a string/char in main string
+    // cout<<str.rfind('o')<<endl;   //To find occurenece of a string from right hand side
+
+    // cout<<str.find_first_of('e')<<endl; // First occurence of a character from string 
+    // cout<<str.find_last_of('e')<<endl;  // Last occurence of a character
+    // cout<<str.find_first_of('l',3);     //we can mention the count starting index for searching the character
+    // cout<<str.find_first_of("le");      //Will return index of either one of them
+
+    // cout<<str.substr(3);     //prints the letters from the index mentioned till null.
+    // cout<<str.substr(3,2);   //prints the letters from the index mentioned upto the 2nd given no. 
+    
+    // cout<<str.compare(str2);  //Compare 2 strings
+
+    
+
+    // cout<<str.at(2)<<endl;    //Returns the letter at a particular index
+    // cout<<str[2]<<endl;       //Same as the above one
+
+    // cout<<str.front()<<endl;   //Gives the first letter of the string
+    // cout<<str.back()<<endl;    //Gives the last letter of a string
+
+    // cout<<str+str2<<endl;      //Join or concatenate 2 string      
+    
+
+    // str2=str;           //Content of 1st string copied to 2nd string
+    // cout<<str2<<endl;   //str2 becomes same as str and displays welcome
+
+     //cout<<str<<endl;
+}
+*/
+
+
+
+
+
+
+
+
+
+/*
+//CLASS STRING- ITERATOR
+
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+    string str="today";
+
+    string::iterator it;
+
+    for(it=str.begin(); it!=str.end(); it++)
+    {
+        cout<<*it;   //Accessing all the characters of string
+        *it=*it-32;  //Turns the into uppercase
+    }
+    cout<<str;
+    cout<<endl;
+}
+*/
+
+
+
+
+
+
+
+
+
+/*
+//CLASS STRING- REVERSE ITERATOR
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+    string str="today";
+
+    string::reverse_iterator it;
+
+    for(it=str.rbegin(); it!=str.rend(); it++)
+    {
+        cout<<*it;   //Displays reverse of the string
+    }
+    //cout<<str;
+    cout<<endl;
+}
+*/
+
+
+
+
+
 
