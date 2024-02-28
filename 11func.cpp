@@ -149,3 +149,314 @@ int main()
 
 
 
+
+/*
+// CALL BY ADDRESS
+
+#include<iostream>
+using namespace std;
+
+void swap(int *a, int *b)
+{
+    int temp;
+    temp=*a;
+    *a=*b;
+    *b=temp;
+}
+
+int main()
+{
+    int x=10,y=20;
+    swap(&x,&y);
+    cout<<x<<" "<<y<<endl;
+}
+*/
+
+
+
+
+/*
+// CALL BY REFERENCE
+
+#include<iostream>
+using namespace std;
+
+void swap(int &a, int &b)
+{
+    int temp;
+    temp=a;
+    a=b;
+    b=temp;
+}
+
+int main()
+{
+    int x=10,y=20;
+    swap(x,y);
+    cout<<x<<" "<<y<<endl;
+}
+*/
+
+
+
+/*
+// RETURN BY ADDRESS
+
+#include<iostream>
+using namespace std;
+
+int * fun()
+{
+    int *p=new int[5];
+    for(int i=0;i<5;i++)
+    {
+        p[i]=5*i;
+    }
+    cout<<p<<endl;
+    return p;    
+}
+int main()
+{
+    int *q=fun();
+    cout<<q<<endl;
+    for(int i=0;i<5;i++)
+    {
+        cout<<q[i]<<endl;
+    }
+}
+*/
+
+
+
+
+/*
+//RETURN BY REFERENCE
+
+#include<iostream>
+using namespace std;
+int & fun(int &x)
+{
+    return x;
+}
+int main()
+{
+    int a=10;
+    fun(a)=25;
+    cout<<a<<endl;
+}
+*/
+
+
+
+
+
+/*
+// GLOBAL AND LOCAL VARIABLE
+
+#include<iostream>
+using namespace std;
+
+int g=5;    //Global variable
+void fun()
+{
+    int a=10;   //Local variable
+    a++;
+    g++;
+    cout<<a<<" "<<g<<endl;   //Display 11 and 6
+}
+int main()
+{
+    cout<<g<<endl;    //Display 5
+    fun();
+    cout<<g<<endl;    //Dipslay 6 
+}
+*/
+
+
+
+/*
+// 
+#include<iostream>
+using namespace std;
+
+int g=5;
+void fun()
+{
+    int g=10;
+    g++;
+    //cout<<g<<endl;     //Display 11
+}
+int main()
+{
+    cout<<g<<endl;  //Display 5
+    fun();
+    cout<<g<<endl;  //Display 5 (local variable change can't modify global variables)
+}
+*/
+
+
+
+
+
+
+/*
+//ANOTHER BLOCK OF CODE INSIDE FUNCTION
+
+#include<iostream>
+using namespace std;
+
+int g=5;
+void fun()
+{
+    int g=10;
+    {
+        int g=0;          //Block of code
+        g++;
+        cout<<g<<endl;    //Displays 1
+    }
+    cout<<g<<endl;        //Displays 10;
+    
+}
+int main()
+{
+    cout<<g<<endl;    //Display 5
+    fun();
+    cout<<g<<endl;   //Display 5
+}
+*/
+
+
+/*
+//SCOPING RULE (levels of scope c++ supports)
+
+#include<iostream>
+using namespace std;
+int x=10;
+int main()
+{
+    int x=20;
+    {
+        int x=30;
+        cout<<x<<endl;   //Display 30
+    }
+    cout<<x<<endl;      //Display 20
+
+    cout<<::x<<endl;    //To access the global variable, Displays 10
+
+    // :: =scope resolution
+}
+*/
+
+
+
+/*
+//STATIC VARIABLE
+
+#include<iostream>
+using namespace std;
+
+void fun()
+{
+    static int s=10;    
+    s++;
+    cout<<s<<endl;
+}
+int main()
+{
+    fun();
+    fun();
+    fun();
+}
+
+//Without static variable, s wil be declared again and again.
+//Everytime main calls fun(), it'll print 11 thrice because it's starting from 10.
+
+//But with static variable, s is not declared over and over
+// It remains in the memory and calling fun thrice displays 11,12,13.
+
+//Useful in modular/function based programming
+*/
+
+
+/*
+//RECURSIVE FUNCTION
+
+#include<iostream>
+using namespace std;
+
+void fun(int n)
+{
+    if(n>0)
+    {
+        cout<<n<<endl;
+        fun(n-1);
+    }
+}
+int main()
+{
+    int x=5;
+    fun(x);
+}
+*/
+
+
+
+/*
+//RECURSVE FUNCTION 2
+#include<iostream>
+using namespace std;
+
+void fun(int n)
+{
+    if(n>0)
+    {
+        cout<<n<<endl;
+        fun(n-1);
+    }
+}
+int main()
+{
+    int x=5;
+    fun(x);
+}
+*/
+
+
+
+/*
+//WRITE A PROGRAM FOR LINEAR SEARCH USING FUNCTION
+
+#include<iostream>
+using namespace std;
+
+int search(int array[], int key, int n)
+{
+    for(int i=0; i<n; i++)
+    {
+        if(key==array[i])
+        {
+            return i;
+        }
+    }
+    return 0;
+}
+
+int main()
+{
+    int array[100];
+    int n;
+    cout<<"Enter no. of elements: ";
+    cin>>n;
+    for(int i=0;i<n;i++)
+    {
+        cout<<"Enter elements: ";
+        cin>>array[i];
+    }
+    int key;
+    cout<<"Enter key to search: ";
+    cin>>key;
+    
+    int index=search(array,key,n);
+    cout<<"Found at "<<index<<endl;
+}
+*/
