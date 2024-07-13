@@ -589,7 +589,7 @@ int main()
 
 
 
-
+/*
 //CONTINUOUS NUMBER PATTERN
 #include<iostream>
 using namespace std;
@@ -611,8 +611,7 @@ int main()
         cout<<endl;
     }
 }
-
-
+*/
 
 
 
