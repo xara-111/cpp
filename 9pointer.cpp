@@ -43,7 +43,7 @@ int main()
     cin>>size;
 
     int A[size];
-    cout<<sizeof A<<endl;    //DISPLAY THE NO. OF BYTES
+    cout<<sizeof(A)<<endl;    //DISPLAY THE NO. OF BYTES
 
     //This array is created in stack.
     //Now if I want to change the size of array, there's no syntax available for that.
@@ -51,6 +51,7 @@ int main()
     //Dynamic array inside heap can help to modify the size.
 }
 */
+
 
 
 
