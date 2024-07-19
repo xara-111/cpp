@@ -20,6 +20,7 @@ int main()
 
 
 
+
 /*
 // USER INPUT OF STRING (SINGLE WORD)
 #include<iostream>
@@ -186,7 +187,7 @@ int main()
 //LENGTH OF STRING IN HEAP
 
 #include<iostream>
-#include<cstring>
+#include<string.h>
 using namespace std;
 int main()
 {
